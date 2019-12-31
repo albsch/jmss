@@ -22,3 +22,10 @@ Execute
 
 for console help and usable modules. 
 
+
+# JMSS - Exporter & Monitoring
+
+If `jmss-exporter` is used instead of the `jmss` runnable jar, then metrics are exported at port `8004`.
+These metrics can be used with the provided Prometheus and Grafana Docker setup:
+
+![metrics](https://user-images.githubusercontent.com/38429047/71622767-5fe51380-2bd8-11ea-89d9-8119b8acbc20.png)
