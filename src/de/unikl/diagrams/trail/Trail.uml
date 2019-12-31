@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>heuristicForget.ForgetNever</OriginalElement>
+  <nodes>
+    <node x="192.66666666666669" y="247.0">factory</node>
+    <node x="150.0" y="395.0">rules.CoreRules</node>
+    <node x="0.0" y="469.0">specificationCore.State</node>
+    <node x="74.99999999999999" y="79.0">specificationCore.Solver</node>
+    <node x="0.0" y="321.0">specificationHeuristics</node>
+    <node x="243.0" y="321.0">specificationCore.HighlevelStrategy</node>
+    <node x="399.0" y="395.0">formula.Clause</node>
+    <node x="0.0" y="395.0">specificationCore.SolverListener</node>
+    <node x="159.0" y="79.0">formula.SetOfClauses</node>
+    <node x="280.0" y="79.0">arraylist.TLiteral</node>
+    <node x="0.0" y="79.0">specificationCore.Trail</node>
+    <node x="200.16666666666669" y="168.0">arraylist.TrailArrayList</node>
+    <node x="280.0" y="395.0">formula.Variable</node>
+    <node x="144.0" y="0.0">specificationCore.ConverterObserver</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="arraylist.TrailArrayList" target="formula.SetOfClauses">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="formula.SetOfClauses" target="specificationCore.ConverterObserver">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="arraylist.TrailArrayList" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="arraylist.TrailArrayList" target="arraylist.TLiteral">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="factory" target="arraylist.TrailArrayList">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="arraylist.TrailArrayList" target="specificationCore.Trail">
+      <point x="-42.08333333333334" y="-14.5" />
+      <point x="208.58333333333331" y="148.0" />
+      <point x="27.5" y="148.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="233.0" y="249.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

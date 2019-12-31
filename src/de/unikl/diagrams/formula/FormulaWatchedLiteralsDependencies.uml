@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>abstractImplementation</OriginalElement>
+  <nodes>
+    <node x="397.875" y="341.0">factory</node>
+    <node x="0.0" y="489.0">rules.CoreRules</node>
+    <node x="295.31862745098033" y="7.5">specificationCore.State</node>
+    <node x="773.125" y="94.0">specificationCore.Solver</node>
+    <node x="399.875" y="262.0">wl.SetOfClausesW</node>
+    <node x="0.0" y="415.0">specificationHeuristics</node>
+    <node x="292.0" y="94.0">interfaces.WatchedLiteralsClause</node>
+    <node x="243.0" y="415.0">specificationCore.HighlevelStrategy</node>
+    <node x="555.625" y="183.0">abstractImplementation.SetOfClausesAbs</node>
+    <node x="0.0" y="94.0">interfaces.WatchedLiteralsVariable</node>
+    <node x="471.5686274509803" y="7.5">formula.Clause</node>
+    <node x="159.0" y="183.0">wl.VariableW</node>
+    <node x="413.0" y="415.0">specificationCore.SolverListener</node>
+    <node x="405.7965686274509" y="183.0">wl.ClauseWL</node>
+    <node x="596.125" y="94.0">formula.SetOfClauses</node>
+    <node x="130.0" y="489.0">specificationCore.Trail</node>
+    <node x="463.0" y="94.0">abstractImplementation.ClauseAbs</node>
+    <node x="178.0" y="94.0">abstractImplementation.VariableAbs</node>
+    <node x="101.5894607843137" y="7.5">formula.Variable</node>
+    <node x="581.125" y="7.5">specificationCore.ConverterObserver</node>
+  </nodes>
+  <notes>
+    <note x="732.125" y="0.0">
+      <node>specificationCore.Solver</node>
+      <value>Clause learn observer\nnotification</value>
+      <edge>
+        <point x="0.0" y="-14.5" />
+        <point x="0.0" y="22.0" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="interfaces.WatchedLiteralsVariable" target="formula.Variable">
+      <point x="0.0" y="-14.5" />
+      <point x="79.0" y="74.0" />
+      <point x="120.0894607843137" y="74.0" />
+      <point x="-18.5" y="14.5" />
+    </edge>
+    <edge source="abstractImplementation.SetOfClausesAbs" target="formula.Clause">
+      <point x="-15.125" y="-14.5" />
+      <point x="601.0" y="143.0" />
+      <point x="567.7916666666666" y="143.0" />
+      <point x="567.7916666666666" y="64.0" />
+      <point x="527.4019607843137" y="64.0" />
+      <point x="22.33333333333337" y="14.5" />
+    </edge>
+    <edge source="formula.SetOfClauses" target="specificationCore.ConverterObserver">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="abstractImplementation.SetOfClausesAbs" target="abstractImplementation.VariableAbs">
+      <point x="-45.375" y="-14.5" />
+      <point x="570.75" y="153.0" />
+      <point x="248.5" y="153.0" />
+      <point x="23.5" y="14.5" />
+    </edge>
+    <edge source="wl.VariableW" target="interfaces.WatchedLiteralsClause">
+      <point x="28.333333333333343" y="-14.5" />
+      <point x="229.83333333333334" y="163.0" />
+      <point x="329.75" y="163.0" />
+      <point x="-37.75" y="14.5" />
+    </edge>
+    <edge source="wl.VariableW" target="abstractImplementation.VariableAbs">
+      <point x="0.0" y="-14.5" />
+      <point x="-23.5" y="14.5" />
+    </edge>
+    <edge source="wl.ClauseWL" target="abstractImplementation.ClauseAbs">
+      <point x="21.0" y="-14.5" />
+      <point x="468.7965686274509" y="163.0" />
+      <point x="506.5" y="163.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="wl.VariableW" target="interfaces.WatchedLiteralsVariable">
+      <point x="-28.333333333333314" y="-14.5" />
+      <point x="173.16666666666669" y="163.0" />
+      <point x="79.0" y="163.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="wl.SetOfClausesW" target="abstractImplementation.SetOfClausesAbs">
+      <point x="37.333333333333314" y="-14.5" />
+      <point x="493.20833333333326" y="237.0" />
+      <point x="616.125" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="wl.ClauseWL" target="interfaces.WatchedLiteralsClause">
+      <point x="-21.0" y="-14.5" />
+      <point x="426.7965686274509" y="163.0" />
+      <point x="405.25" y="163.0" />
+      <point x="37.75" y="14.5" />
+    </edge>
+    <edge source="abstractImplementation.SetOfClausesAbs" target="formula.SetOfClauses">
+      <point x="15.125" y="-14.5" />
+      <point x="631.25" y="163.0" />
+      <point x="646.625" y="163.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="abstractImplementation.ClauseAbs" target="formula.Clause">
+      <point x="21.75" y="-14.5" />
+      <point x="528.25" y="74.0" />
+      <point x="505.0686274509803" y="74.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="abstractImplementation.VariableAbs" target="specificationCore.State">
+      <point x="23.5" y="-14.5" />
+      <point x="248.5" y="74.0" />
+      <point x="309.81862745098033" y="74.0" />
+      <point x="-14.5" y="14.5" />
+    </edge>
+    <edge source="interfaces.WatchedLiteralsClause" target="formula.Clause">
+      <point x="0.0" y="-14.5" />
+      <point x="367.5" y="74.0" />
+      <point x="482.73529411764696" y="74.0" />
+      <point x="-22.333333333333314" y="14.5" />
+    </edge>
+    <edge source="wl.SetOfClausesW" target="wl.ClauseWL">
+      <point x="0.0" y="-14.5" />
+      <point x="455.875" y="237.0" />
+      <point x="447.7965686274509" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="abstractImplementation.SetOfClausesAbs" target="specificationCore.Solver">
+      <point x="45.375" y="-14.5" />
+      <point x="661.5" y="163.0" />
+      <point x="805.125" y="163.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="abstractImplementation.VariableAbs" target="formula.Variable">
+      <point x="-23.5" y="-14.5" />
+      <point x="201.5" y="74.0" />
+      <point x="157.0894607843137" y="74.0" />
+      <point x="18.5" y="14.5" />
+    </edge>
+    <edge source="factory" target="wl.SetOfClausesW">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="abstractImplementation.ClauseAbs" target="specificationCore.State">
+      <point x="-21.75" y="-14.5" />
+      <point x="484.75" y="64.0" />
+      <point x="338.81862745098033" y="64.0" />
+      <point x="14.5" y="14.5" />
+    </edge>
+    <edge source="wl.SetOfClausesW" target="wl.VariableW">
+      <point x="-37.33333333333337" y="-14.5" />
+      <point x="418.54166666666663" y="237.0" />
+      <point x="201.5" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="440.0" y="199.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

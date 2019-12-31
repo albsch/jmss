@@ -1,0 +1,24 @@
+c Loaded DIMACS instance: aim-50-1_6-yes1-2.cnf
+c START OPTIONS ------------------------------------
+c High-level strategy: highlevelStrategy.Chaff
+c Trail structure: arraylist.TrailArrayList@103dbd3
+c Data structure: mixed.SetOfClausesMixed
+c Decision heuristic: heuristicDecide.PolarityCachingPol || heuristicDecide.MSATeffective@167cf4d
+c Forget : heuristicForget.ForgetNever
+c Learn : heuristicLearn.LearnSimple
+c Restart : heuristicRestart.RestartConflictCountingGeometric
+c START FINISH LOG --------------------------------------
+c Initial (literal) [binary] {ternary}: 80 (0)[0]{80} 0
+c Operations: 1521
+c Decision: 41
+c Unit propagations: 336
+c Conflicts/Branches: 21
+c Ignored decisionlevels: 15
+c Average (Highest) decision level jump: 3 (8)
+c Resolutions: 738
+c Learned (literal) [binary] {ternary}: 19(1)[2]{2}
+c Forgotten clauses: 0
+c Restarts: 0
+c Time spent: 96 ms(49 ms + 47 ms)
+s SATISFIABLE
+v 38 -43 -24 -21 34 39 36 12 -15 31 6 42 33 -18 4 -17 -16 19 -20 -49 -47 26 25 14 44 3 -1 41 23 40 -22 8 -5 30 29 -13 -37 -32 46 10 27 50 48 11 -45 -28 7 35 2 9 0

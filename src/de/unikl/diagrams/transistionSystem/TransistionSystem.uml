@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>factory.HighlevelStrategyFactory</OriginalElement>
+  <nodes>
+    <node x="493.5291666666667" y="705.0">factory</node>
+    <node x="1006.5291666666667" y="388.0">rules.CoreRules</node>
+    <node x="879.5472049689441" y="79.0">specificationCore.State</node>
+    <node x="276.0640269151139" y="79.0">specificationCore.Solver</node>
+    <node x="29.08486024844717" y="79.0">specificationHeuristics</node>
+    <node x="432.2791666666667" y="547.0">ruleSystem.RuleSystem</node>
+    <node x="80.85000000000002" y="388.0">rules.RLearn</node>
+    <node x="545.2791666666667" y="547.0">specificationCore.HighlevelStrategy</node>
+    <node x="269.0" y="779.0">formula.Clause</node>
+    <node x="784.5291666666667" y="388.0">rules.RBackjump</node>
+    <node x="463.5291666666667" y="388.0">rules.RUnit</node>
+    <node x="272.01666666666665" y="388.0">rules.RRestart</node>
+    <node x="0.0" y="779.0">specificationCore.SolverListener</node>
+    <node x="896.5291666666667" y="388.0">rules.RBacktrack</node>
+    <node x="410.2085144927537" y="79.0">formula.SetOfClauses</node>
+    <node x="650.5223602484472" y="79.0">specificationCore.Trail</node>
+    <node x="431.7791666666667" y="626.0">highlevelStrategy.DPLLSimple</node>
+    <node x="368.5291666666667" y="388.0">rules.RDecide</node>
+    <node x="544.5291666666667" y="388.0">rules.RConflict</node>
+    <node x="593.2791666666667" y="626.0">highlevelStrategy.Chaff</node>
+    <node x="150.0" y="779.0">formula.Variable</node>
+    <node x="645.5291666666667" y="388.0">rules.RExplainEfficient</node>
+    <node x="168.85000000000002" y="388.0">rules.RForget</node>
+    <node x="395.2085144927537" y="0.0">specificationCore.ConverterObserver</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="rules.RDecide" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RRestart">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RBacktrack" target="specificationCore.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="factory" target="highlevelStrategy.Chaff">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RBacktrack">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RDecide" target="specificationCore.Trail">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RBackjump" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RExplainEfficient" target="specificationCore.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RUnit">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RLearn" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RConflict" target="specificationCore.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RRestart" target="specificationHeuristics">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RConflict" target="formula.SetOfClauses">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RDecide" target="formula.SetOfClauses">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RExplainEfficient" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RForget" target="formula.SetOfClauses">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RRestart" target="specificationCore.Trail">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RUnit" target="specificationCore.Trail">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RBackjump">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="highlevelStrategy.Chaff" target="ruleSystem.RuleSystem">
+      <point x="-15.25" y="-14.5" />
+      <point x="608.5291666666667" y="596.0" />
+      <point x="502.0291666666667" y="596.0" />
+      <point x="23.25" y="14.5" />
+    </edge>
+    <edge source="highlevelStrategy.DPLLSimple" target="ruleSystem.RuleSystem">
+      <point x="-23.75" y="-14.5" />
+      <point x="-23.25" y="14.5" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RForget">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="formula.SetOfClauses" target="specificationCore.ConverterObserver">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="rules.RExplainEfficient" target="specificationCore.Trail">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RConflict" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RDecide" target="specificationHeuristics">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RExplainEfficient" target="formula.SetOfClauses">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RUnit" target="formula.SetOfClauses">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RLearn">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RConflict">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="highlevelStrategy.Chaff" target="specificationCore.HighlevelStrategy">
+      <point x="15.25" y="-14.5" />
+      <point x="31.25" y="14.5" />
+    </edge>
+    <edge source="rules.RLearn" target="specificationHeuristics">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RDecide">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RUnit" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="factory" target="highlevelStrategy.DPLLSimple">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="specificationHeuristics">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="highlevelStrategy.DPLLSimple" target="specificationCore.HighlevelStrategy">
+      <point x="23.75" y="-14.5" />
+      <point x="503.0291666666667" y="606.0" />
+      <point x="576.5291666666667" y="606.0" />
+      <point x="-31.25" y="14.5" />
+    </edge>
+    <edge source="rules.RBackjump" target="specificationCore.Trail">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.RExplainEfficient">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RBackjump" target="specificationCore.State">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RBacktrack" target="specificationCore.Trail">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ruleSystem.RuleSystem" target="rules.CoreRules">
+      <point x="44.285714285714334" y="-14.5" />
+      <point x="523.064880952381" y="527.0" />
+      <point x="1049.0291666666667" y="527.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="rules.RForget" target="specificationCore.Solver">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="rules.RForget" target="specificationHeuristics">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6690821256038647" x="546.6823104693142" y="364.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

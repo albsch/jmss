@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>heuristicForget.ForgetNever</OriginalElement>
+  <nodes>
+    <node x="647.620238095238" y="168.0">heuristicForget</node>
+    <node x="1049.0" y="79.0">specificationHeuristics.LearnStrategy</node>
+    <node x="767.0" y="277.0">factory</node>
+    <node x="170.0" y="351.0">rules.CoreRules</node>
+    <node x="789.0" y="79.0">specificationHeuristics.ForgetStrategy</node>
+    <node x="1173.0" y="79.0">specificationCore.State</node>
+    <node x="368.0" y="79.0">specificationHeuristics.LiteralSelectionStrategy</node>
+    <node x="0.0" y="425.0">specificationCore.Solver</node>
+    <node x="226.75" y="168.0">heuristicDecide</node>
+    <node x="0.0" y="351.0">specificationCore.HighlevelStrategy</node>
+    <node x="419.0" y="351.0">formula.Clause</node>
+    <node x="664.0" y="79.0">specificationCore.SolverListener</node>
+    <node x="183.0" y="79.0">specificationHeuristics.VariableSelectionStrategy</node>
+    <node x="1075.0" y="168.0">heuristicLearn</node>
+    <node x="543.0" y="79.0">formula.SetOfClauses</node>
+    <node x="0.0" y="79.0">specificationHeuristics.PolaritySelectionStrategy</node>
+    <node x="109.0" y="425.0">specificationCore.Trail</node>
+    <node x="853.5" y="168.0">heuristicRestart</node>
+    <node x="918.0" y="79.0">specificationHeuristics.RestartStrategy</node>
+    <node x="300.0" y="351.0">formula.Variable</node>
+    <node x="528.0" y="0.0">specificationCore.ConverterObserver</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="factory" target="heuristicLearn">
+      <point x="43.5" y="-14.5" />
+      <point x="868.5" y="257.0" />
+      <point x="1151.5" y="257.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="formula.SetOfClauses" target="specificationCore.ConverterObserver">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="heuristicRestart" target="specificationHeuristics.RestartStrategy">
+      <point x="40.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="heuristicLearn" target="specificationCore.State">
+      <point x="38.25" y="-14.5" />
+      <point x="1189.75" y="148.0" />
+      <point x="1202.0" y="148.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="heuristicDecide" target="specificationHeuristics.LiteralSelectionStrategy">
+      <point x="22.85714285714289" y="-14.5" />
+      <point x="329.6071428571429" y="128.0" />
+      <point x="445.5" y="128.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="heuristicDecide" target="specificationHeuristics.VariableSelectionStrategy">
+      <point x="0.0" y="-14.5" />
+      <point x="41.25" y="14.5" />
+    </edge>
+    <edge source="heuristicForget" target="specificationHeuristics.ForgetStrategy">
+      <point x="52.66666666666666" y="-14.5" />
+      <point x="779.2869047619047" y="148.0" />
+      <point x="843.5" y="148.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="heuristicLearn" target="specificationHeuristics.LearnStrategy">
+      <point x="-38.25" y="-14.5" />
+      <point x="1113.25" y="148.0" />
+      <point x="1101.0" y="148.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="heuristicDecide" target="heuristicDecide">
+      <point x="-53.333333333333314" y="14.5" />
+      <point x="253.41666666666669" y="217.0" />
+      <point x="206.75" y="217.0" />
+      <point x="206.75" y="189.75" />
+      <point x="-80.0" y="7.25" />
+    </edge>
+    <edge source="heuristicRestart" target="specificationCore.SolverListener">
+      <point x="-40.0" y="-14.5" />
+      <point x="893.5" y="138.0" />
+      <point x="751.5" y="138.0" />
+      <point x="35.0" y="14.5" />
+    </edge>
+    <edge source="heuristicDecide" target="formula.SetOfClauses">
+      <point x="45.71428571428578" y="-14.5" />
+      <point x="352.4642857142858" y="138.0" />
+      <point x="568.25" y="138.0" />
+      <point x="-25.25" y="14.5" />
+    </edge>
+    <edge source="heuristicDecide" target="specificationHeuristics.PolaritySelectionStrategy">
+      <point x="-68.57142857142856" y="-14.5" />
+      <point x="238.17857142857144" y="148.0" />
+      <point x="40.75" y="148.0" />
+      <point x="-40.75" y="14.5" />
+    </edge>
+    <edge source="heuristicDecide" target="specificationCore.SolverListener">
+      <point x="68.57142857142856" y="-14.5" />
+      <point x="375.32142857142856" y="148.0" />
+      <point x="681.5" y="148.0" />
+      <point x="-35.0" y="14.5" />
+    </edge>
+    <edge source="factory" target="heuristicRestart">
+      <point x="14.5" y="-14.5" />
+      <point x="839.5" y="247.0" />
+      <point x="933.5" y="247.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="heuristicForget" target="formula.SetOfClauses">
+      <point x="-52.66666666666666" y="-14.5" />
+      <point x="673.9535714285714" y="138.0" />
+      <point x="618.75" y="138.0" />
+      <point x="25.25" y="14.5" />
+    </edge>
+    <edge source="factory" target="heuristicDecide">
+      <point x="-43.5" y="-14.5" />
+      <point x="781.5" y="257.0" />
+      <point x="360.08333333333337" y="257.0" />
+      <point x="53.33333333333337" y="14.5" />
+    </edge>
+    <edge source="factory" target="heuristicForget">
+      <point x="-14.5" y="-14.5" />
+      <point x="810.5" y="247.0" />
+      <point x="726.620238095238" y="247.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="heuristicForget" target="specificationCore.SolverListener">
+      <point x="0.0" y="-14.5" />
+      <point x="726.620238095238" y="148.0" />
+      <point x="716.5" y="148.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="616.0" y="187.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
