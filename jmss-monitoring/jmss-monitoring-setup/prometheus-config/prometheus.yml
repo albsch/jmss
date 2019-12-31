@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 3s
+  external_labels:
+    monitor: 'codelab-monitor'
+
+scrape_configs:
+  - job_name: 'jmss'
+    static_configs:
+        - targets: ['localhost:8004']

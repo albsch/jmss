@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+// Use the central repository for dependencies.
+repositories {
+    mavenCentral()
+}
+
+// The simpleclient dependencies.
+dependencies {
+  compile group: 'io.prometheus', name: 'simpleclient', version: '0.8.0'
+  compile group: 'io.prometheus', name: 'simpleclient_hotspot', version: '0.8.0'
+  compile group: 'io.prometheus', name: 'simpleclient_httpserver', version: '0.8.0'
+
+  compile fileTree(dir: 'lib', include: ['*.jar'])
+}
+
+jar {
+  // Provide the name of the main class.
+  manifest {
+    attributes(
+     'Main-Class': 'jmss.metrics.Main'
+    )
+  }
+
+  // Create a fat jar.
+  from {
+    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+  }
+}
