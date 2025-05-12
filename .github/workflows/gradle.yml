@@ -7,17 +7,35 @@ on:
     branches: [ master ]
 
 jobs:
-  buildv8:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: [ 8,9,10,11,12,13,14,15 ]
+        java: [ 8,11,17,21,24 ]
     name: Java ${{ matrix.java }} compile
     steps:
     - uses: actions/checkout@v2
-    - name: Set up java 8
+    - name: Set up java
       uses: actions/setup-java@v1
       with:
         java-version: ${{ matrix.java }}
-    - name: Build with Gradle
-      run: ./gradlew build
+    - name: Compile sources
+      run: ./build_prod.sh
+    - name: Compile tests
+      run: ./build_test.sh
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ 8,11,17,21,24 ]
+    name: Java ${{ matrix.java }} compile
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up java
+      uses: actions/setup-java@v1
+      with:
+        java-version: ${{ matrix.java }}
+    - run: ./build_prod.sh
+    - run: ./build_test.sh
+    - run: ./run_tests.sh

@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static org.junit.Assert.*;
 
 /**
- * Created by Albert Schimpf on 05.02.16.
+ * Created on 05.02.16.
  */
 public class VariableHeapIntTest {
 
