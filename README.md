@@ -1,14 +1,12 @@
 # JMSS - Java Modular SAT Solver
 
-JMSS is a minimal zero-dependency efficient SAT solver.
-
-This work is based on the system defined by Sava Krstic and Amit Goel, 'Architecting Solvers for SAT Modulo Theories: Nelson-Oppen with DPLL' (2007).
-
-# JMSS
-
 ![License](https://img.shields.io/badge/license-MIT-%23373737)
 ![Language](https://img.shields.io/badge/language-java-blue.svg)
 ![Version](https://img.shields.io/badge/version-8-9cf.svg)
+
+JMSS is a minimal zero-dependency efficient SAT solver.
+
+This work is based on the system defined by Sava Krstic and Amit Goel, 'Architecting Solvers for SAT Modulo Theories: Nelson-Oppen with DPLL' (2007).
 
 # JMSS - Usage
 

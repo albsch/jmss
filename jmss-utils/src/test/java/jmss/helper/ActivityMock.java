@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Albert Schimpf on 05.02.16.
+ * Created on 05.02.16.
  */
 public class ActivityMock implements Activity {
     Map<Integer,Integer> actMap = new HashMap<>();
